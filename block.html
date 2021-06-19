@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background: #333; 
+        }
+        .box{
+            width: 500px;
+            height: 540px;
+            margin: 30px;
+            background-color: rgb(65, 65, 65);
+            border: 2px solid gray;
+            border-radius: 20px;
+        }
+        .box:hover .fas{
+            color: white;
+        }
+        a{
+            text-decoration: none;
+        }
+        .icons{
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .icons .fab{
+            color: #fff;
+            margin: 10px 0 0 20px;
+            font-size: 30px;
+        }
+        .icons .fas{
+            color: rgb(65, 65, 65);
+            margin: 10px 20px 0 0;
+            font-size: 25px;
+        }
+        .icons .fas:hover{
+            color: white;
+        }
+        .txt{
+            margin-left: 40px;
+            
+        }
+        .txt1{
+            font-size: 23px;
+            font-weight: 800;
+            color: #fff;
+        }
+        .txt2{
+            padding-top: 40px;
+            color: rgb(189, 189, 189);
+        }
+        .slika img{
+            max-width: 96%;
+            height: auto;
+            margin: 10px;
+            border-radius: 15px;
+        }
+        .icons2{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 60px 0 60px;
+        }
+        .icons2 .fas{
+            color: rgb(219, 219, 219);
+            font-size: 25px;
+            
+        }
+        .icons2 span{
+            font-size: 17px;
+            vertical-align: middle;
+            font-weight: 600;
+            letter-spacing: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <a href="#">
+        <div class="icons">
+            <i class="fab fa-speakap"></i>
+            <i class="fas fa-flag"></i>
+        </div>
+        <div class="txt">
+            <h2 class="txt1">Uh oh, half the internet just went down</h2>
+            <p class="txt2">Today 1m read time</p>
+        </div>
+        <div class="slika">
+            <img src="uh.jpg" alt="error" width="640" height="360">
+        </div>
+        <div class="icons2">
+            <i class="fas fa-arrow-circle-up"><span> 4</span></i>
+            <i class="fas fa-comment-dots"><span> 1</span></i>
+            <i class="fas fa-bookmark"></i>
+        </div>
+    </a>
+    </div>
+    
+</body>
+</html>
