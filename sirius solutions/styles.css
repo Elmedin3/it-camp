@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10vw;
+}
+.list ul, li{
+    display: inline-block;
+}
+.list ul, li, a{
+    padding: 2vh 0;
+    margin: 0 1vw;
+} 
+.list a:hover{
+    color: #79a79d;
+    border-bottom: 2px solid #79a79d;
+}  
+.kont button{
+    padding: 15px;
+    background-color: white;
+    border: 2px solid #79a79d;
+    color: #79a79d;
+    border-radius: 5px;
+
+}
+button:hover{
+    color: white;
+    background-color: #79a79d;
+}
+.glavna{
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    width: 99vw;
+    margin-bottom: 10vh;
+}
+.glavna-levo{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    width: 38vw;
+    margin-top: 10vh;
+    margin-left: 10vw;
+}
+.solutions{
+    margin-bottom: 8vh;
+    font-size: 2vw;
+    background-color: #D5E2E8;
+    color: #79a79d;
+    width: 10vw;
+    padding: 2vh 0 2vh 10vw;
+    margin-left: -10vw;
+    border-radius: 0 50px 50px 0;
+}
+.slogan{
+    font-size: 3.8vw;
+    /* font-family: 'Bitter', serif; */
+    margin-bottom: 8vh;
+}
+.kat{
+    margin: 0;
+    width: 10vw;
+    color: #79a79d;
+    border: 2px solid #79a79d;
+    text-align: center;
+    font-size: 1.2vw;
+    border-radius: 50px;
+    margin-bottom: 8vh;
+}
+.icons1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 25vw;
+    font-size: 5vh;
+}
+.glavna-desno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+}
+.glavna-desno img{
+    width: 50vw;
+    height: 80vh;
+}
+.onama{
+    display: flex;
+    flex-direction: row;
+    width: 99vw;
+    margin-bottom: 10vh;
+}
+.onama-levo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 42vw;
+    margin-left: 10vw;
+}
+.onama-levo h2{
+    color: #79a79d;
+    font-size: 3vw;
+    margin-bottom: 5vh;
+}
+.onama-levo p{
+    font-size: 1.2vw;
+}
+.onama-desno{
+    display: flex;
+    justify-content: center;
+    width: 57vw;
+}
+.onama-desno img{
+    height: 100%;
+    width: 85%;
+}
+.webdev{
+    display: flex;
+    flex-direction: row;
+    width: 99vw;
+    margin-bottom: 10vh;
+}
+.webdev-levo{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10vw;
+    width: 50vw;
+}
+.webdev-desno{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 49vw;
+    margin-right: 10vh;
+}
+.webdev-desno h2{
+    color: #79a79d;
+    font-size: 3vw;
+    margin-bottom: 5vh;
+}
+.webdev-desno p{
+    font-size: 1.2vw;
+}
+.webdiz{
+    display: flex;
+    flex-direction: row;
+    width: 99vw;
+    margin-bottom: 10vh;
+}
+.webdiz-levo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 49vw;
+    margin-left: 10vw;
+}
+.webdiz-levo h2{
+    color: #79a79d;
+    font-size: 3vw;
+    margin-bottom: 5vh;
+}
+.webdiz-levo p{
+    font-size: 1.2vw;
+}
+.webdiz-desno{
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 10vw;
+    width: 50vw;
+}
+.grafickidiz{
+    display: flex;
+    flex-direction: row;
+    width: 99vw;
+    margin-bottom: 10vh;
+}
+.grafickidiz-levo{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10vw;
+    width: 50vw;
+}
+.grafickidiz-desno{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 49vw;
+    margin-right: 10vh;
+}
+.grafickidiz-desno h2{
+    color: #79a79d;
+    font-size: 3vw;
+    margin-bottom: 5vh;
+}
+.grafickidiz-desno p{
+    font-size: 1.2vw;
+}
+.obrvidea{
+    display: flex;
+    flex-direction: row;
+    width: 99vw;
+    margin-bottom: 10vh;
+}
+.obrvidea-levo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 49vw;
+    margin-left: 10vw;
+}
+.obrvidea-levo h2{
+    color: #79a79d;
+    font-size: 3vw;
+    margin-bottom: 5vh;
+}
+.obrvidea-levo p{
+    font-size: 1.2vw;
+}
+.obrvidea-desno{
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 10vw;
+    width: 50vw;
+}
