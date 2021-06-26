@@ -1,7 +1,9 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Lato', sans-serif; */
+    font-weight: 500;
     color: #333;
 }
 ul{
@@ -84,22 +86,24 @@ button:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 25vw;
-    font-size: 5vh;
+    margin-right: 20vw;
+    font-size: 2vw;
 }
 .glavna-desno{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 60vw;
+    margin-right: 10vw;
 }
 .glavna-desno img{
-    width: 50vw;
-    height: 80vh;
+    /* width: 40vw;
+    height: 90vh; */
 }
 .onama{
     display: flex;
     flex-direction: row;
+    background-color: #D5E2E8;
     width: 99vw;
     margin-bottom: 10vh;
 }
@@ -107,6 +111,10 @@ button:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 5vh 0;
+    padding: 0vh 2vw;
     width: 42vw;
     margin-left: 10vw;
 }
@@ -117,15 +125,12 @@ button:hover{
 }
 .onama-levo p{
     font-size: 1.2vw;
+    text-align: justify;
 }
 .onama-desno{
     display: flex;
     justify-content: center;
     width: 57vw;
-}
-.onama-desno img{
-    height: 100%;
-    width: 85%;
 }
 .webdev{
     display: flex;
@@ -137,8 +142,15 @@ button:hover{
     display: flex;
     justify-content: flex-start;
     margin-left: 10vw;
-    width: 50vw;
+    width: 50vw;}
+    /* transform: translateY(1500px);
+    animation: rightt 1s forwards ease-in;
 }
+@keyframes rightt{
+    to{
+        transform: translateY(0);
+    }
+} */
 .webdev-desno{
     display: flex;
     flex-direction: column;

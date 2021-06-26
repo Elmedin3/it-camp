@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css">
     <title>Početna</title>
 </head>
@@ -39,11 +40,12 @@
             </div>
         </div>
         <div class="glavna-desno">
-            <img src="images/code2.jpg" alt="image">
+            <img src="images/animation2.gif" alt="image">
         </div>
     </div>
     <div class="onama">
-        <div class="onama-levo">
+        <div class="onama-levo" data-aos="fade-right">
+        >
             <h2>O nama</h2>
             <p>
                 Na Web Design programu naučićete načine izrade
@@ -58,45 +60,55 @@
                 računare, tako i za mobilne telefone, tablet uređaje i tako dalje.
             </p>
         </div>
-        <div class="onama-desno">
-            <img src="images/cnt-img.png" alt="logo">
+        <div class="onama-desno" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
+            <img src="images/onamalogo.png" alt="logo">
         </div>
     </div>
     <div class="webdev">
-        <div class="webdev-levo">
+        <div class="webdev-levo" data-aos="fade-down-right">
             <img src="images/codee.png" alt="webdev">
         </div>
-        <div class="webdev-desno">
+        <div class="webdev-desno" data-aos="zoom-in">
             <h2>Web development</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quasi ipsam dignissimos fugit nesciunt facilis exercitationem. Nemo tenetur doloremque, animi nihil autem pariatur modi eaque praesentium voluptate ratione minus quo.</p>
         </div>
     </div>
     <div class="webdiz">
-        <div class="webdiz-levo">
+        <div class="webdiz-levo" data-aos="zoom-in">
             <h2>Web dizajn</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quasi ipsam dignissimos fugit nesciunt facilis exercitationem. Nemo tenetur doloremque, animi nihil autem pariatur modi eaque praesentium voluptate ratione minus quo.</p>
         </div>
-        <div class="webdiz-desno">
+        <div class="webdiz-desno" data-aos="fade-down-left">
             <img src="images/codee2.png" alt="webdiz">
         </div>
     </div>
     <div class="grafickidiz">
-        <div class="grafickidiz-levo">
+        <div class="grafickidiz-levo" data-aos="fade-down-right">
             <img src="images/codee3.png" alt="grafickidiz">
         </div>
-        <div class="grafickidiz-desno">
+        <div class="grafickidiz-desno" data-aos="zoom-in">
             <h2>Grafički diziajn</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quasi ipsam dignissimos fugit nesciunt facilis exercitationem. Nemo tenetur doloremque, animi nihil autem pariatur modi eaque praesentium voluptate ratione minus quo.</p>
         </div>
     </div>
     <div class="obrvidea">
-        <div class="obrvidea-levo">
+        <div class="obrvidea-levo" data-aos="zoom-in">
             <h2>Obrada videa</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quasi ipsam dignissimos fugit nesciunt facilis exercitationem. Nemo tenetur doloremque, animi nihil autem pariatur modi eaque praesentium voluptate ratione minus quo.</p>
         </div>
-        <div class="obrvidea-desno">
+        <div class="obrvidea-desno" data-aos="fade-down-left">
             <img src="images/codee4.png" alt="webdiz">
         </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 200,
+        duration: 800
+    });
+  </script>
 </body>
 </html>

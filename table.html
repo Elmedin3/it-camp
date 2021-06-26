@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            list-style: none;
+            text-decoration: none;
+        }
+        .tabele{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .t1{
+            width: 30vw;
+            height: 80vh;
+            border: 3px solid rgb(209, 209, 209);
+;
+        }
+        .t1 tr #basic{
+            border-top: 3px solid green;
+            font-size: 2.5vw;
+            padding: 5vh 0;
+            color: green;
+        }
+        .t1 tr #r99{
+            background-color: green;
+            font-size: 2vw;
+            padding: 3vh 0;
+            color: #fff;
+        }
+        .t1 tbody tr{
+            color: rgb(104, 104, 104);
+        }
+        .t1 tbody tr:nth-child(even){
+            background-color: rgb(209, 209, 209);
+        }
+        .t1 tfoot tr a{
+            border: 2px solid green;
+            color: green;
+            padding: 1.5vh 0.5vw;
+            margin-top: 3vh;
+        }
+        .t1 tfoot{
+            height: 8vh;
+        }
+        .t2{
+            width: 30vw;
+            height: 80vh;
+            border: 3px solid rgb(209, 209, 209);
+;
+        }
+        .t2 tr #standard{
+            border-top: 3px solid blue;
+            font-size: 2.5vw;
+            padding: 5vh 0;
+            color: blue;
+        }
+        .t2 tr #r299{
+            background-color: blue;
+            font-size: 2vw;
+            padding: 3vh 0;
+            color: #fff;
+        }
+        .t2 tbody tr{
+            color: rgb(104, 104, 104);
+        }
+        .t2 tbody tr:nth-child(even){
+            background-color: rgb(209, 209, 209);
+        }
+        .t2 tfoot tr a{
+            border: 2px solid blue;
+            color: blue;
+            padding: 1.5vh 0.5vw;
+            margin-top: 3vh;
+        }
+        .t2 tfoot{
+            height: 8vh;
+        }
+        .t3{
+            width: 30vw;
+            height: 80vh;
+            border: 3px solid rgb(209, 209, 209);
+;
+        }
+        .t3 tr #premium{
+            border-top: 3px solid purple;
+            font-size: 2.5vw;
+            padding: 5vh 0;
+            color: purple;
+        }
+        .t3 tr #r399{
+            background-color: purple;
+            font-size: 2vw;
+            padding: 3vh 0;
+            color: #fff;
+        }
+        .t3 tbody tr{
+            color: rgb(104, 104, 104);
+        }
+        .t3 tbody tr:nth-child(even){
+            background-color: rgb(209, 209, 209);
+        }
+        .t3 tfoot tr a{
+            border: 2px solid purple;
+            color: purple;
+            padding: 1.5vh 0.5vw;
+            margin-top: 3vh;
+        }
+        .t3 tfoot{
+            height: 8vh;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="tabele">
+    <table class="t1">
+    <thead>
+        <tr>
+            <th id="basic">Basic</th>
+        </tr>
+        <tr>
+            <th id="r99">$99</th>
+        </tr>    
+    </thead>
+    <tbody>
+        <tr>
+            <th>Option</th>
+        </tr>
+        <tr>
+            <th>Option</th>
+        </tr>
+        <tr>
+            <th>Option</th>
+        </tr>
+        <tr>
+            <th>Option</th>
+        </tr>
+        <tr>
+            <th>Option</th>
+        </tr>
+        <tr>
+            <th>Option</th>
+        </tr>
+        <tr>
+            <th>Option</th>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th><a href="#">Purchase</a></th>
+        </tr>
+    </tfoot>
+    </table>
+    <div class="tabele">
+    <table class="t2">
+    <thead>
+        <tr>
+            <th id="standard">Standard</th>
+        </tr>
+        <tr>
+            <th id="r299">$99</th>
+        </tr>    
+    </thead>
+    <tbody>
+        <tr>
+            <th>Option</th>
+        </tr>
+        <tr>
+            <th>Option</th>
+        </tr>
+        <tr>
+            <th>Option</th>
+        </tr>
+        <tr>
+            <th>Option</th>
+        </tr>
+        <tr>
+            <th>Option</th>
+        </tr>
+        <tr>
+            <th>Option</th>
+        </tr>
+        <tr>
+            <th>Option</th>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th><a href="#">Purchase</a></th>
+        </tr>
+    </tfoot>
+    </table>
+    <div class="tabele">
+    <table class="t3">
+    <thead>
+        <tr>
+            <th id="premium">Premium</th>
+        </tr>
+        <tr>
+            <th id="r399">$99</th>
+        </tr>    
+    </thead>
+    <tbody>
+        <tr>
+            <th>Option</th>
+        </tr>
+        <tr>
+            <th>Option</th>
+        </tr>
+        <tr>
+            <th>Option</th>
+        </tr>
+        <tr>
+            <th>Option</th>
+        </tr>
+        <tr>
+            <th>Option</th>
+        </tr>
+        <tr>
+            <th>Option</th>
+        </tr>
+        <tr>
+            <th>Option</th>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th><a href="#">Purchase</a></th>
+        </tr>
+    </tfoot>
+    </table>
+
+</div>
+</body>
+</html>
