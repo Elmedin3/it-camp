@@ -35,11 +35,11 @@ header{
     border-bottom: 2px solid #79a79d;
 }  
 .kont button{
-    padding: 15px;
+    padding: 15px 30px;
     background-color: white;
     border: 2px solid #79a79d;
     color: #79a79d;
-    border-radius: 5px;
+    border-radius: 50px;
     font-size: 0.9vw;
     font-weight: 600;
 }
@@ -112,10 +112,6 @@ button:hover{
     width: 60vw;
     margin-right: 10vw;
 }
-.glavna-desno img{
-    /* width: 40vw;
-    height: 90vh; */
-}
 .onama{
     display: flex;
     flex-direction: row;
@@ -146,6 +142,16 @@ button:hover{
 .onama-levo p{
     font-size: 1.2vw;
     text-align: justify;
+    margin-bottom: 5vh;
+}
+.onama-levo a{
+    color: #fff;
+    background-color: #79a79d;
+    border-radius: 50px;
+    text-align: center;
+    width: 8vw;
+    font-size: 1,5vw;
+    margin-bottom: 3vh;
 }
 .onama-desno{
     display: flex;
@@ -162,22 +168,15 @@ button:hover{
     display: flex;
     justify-content: flex-start;
     margin-left: 10vw;
-    width: 50vw;}
-    /* transform: translateY(1500px);
-    animation: rightt 1s forwards ease-in;
+    width: 50vw;
 }
-@keyframes rightt{
-    to{
-        transform: translateY(0);
-    }
-} */
 .webdev-desno{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 49vw;
-    margin-right: 10vh;
+    margin-right: 15vh;
 }
 .webdev-desno h2{
     color: #79a79d;
@@ -186,6 +185,16 @@ button:hover{
 }
 .webdev-desno p{
     font-size: 1.2vw;
+    margin-bottom: 10vh;
+}
+.webdev-desno a{
+    color: #79a79d;
+    border: 2px solid #79a79d;
+    border-radius: 50px;
+    text-align: center;
+    width: 8vw;
+    font-size: 1,5vw;
+    margin-bottom: 3vh;
 }
 .webdiz{
     display: flex;
@@ -208,6 +217,16 @@ button:hover{
 }
 .webdiz-levo p{
     font-size: 1.2vw;
+    margin-bottom: 10vh;
+}
+.webdiz-levo a{
+    color: #79a79d;
+    border: 2px solid #79a79d;
+    border-radius: 50px;
+    text-align: center;
+    width: 8vw;
+    font-size: 1,5vw;
+    margin-bottom: 3vh;
 }
 .webdiz-desno{
     display: flex;
@@ -233,7 +252,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     width: 49vw;
-    margin-right: 10vh;
+    margin-right: 15vh;
 }
 .grafickidiz-desno h2{
     color: #79a79d;
@@ -242,12 +261,22 @@ button:hover{
 }
 .grafickidiz-desno p{
     font-size: 1.2vw;
+    margin-bottom: 10vh;
+}
+.grafickidiz-desno a{
+    color: #79a79d;
+    border: 2px solid #79a79d;
+    border-radius: 50px;
+    text-align: center;
+    width: 8vw;
+    font-size: 1,5vw;
+    margin-bottom: 3vh;
 }
 .obrvidea{
     display: flex;
     flex-direction: row;
     width: 99vw;
-    margin-bottom: 10vh;
+    margin-bottom: 20vh;
 }
 .obrvidea-levo{
     display: flex;
@@ -264,10 +293,107 @@ button:hover{
 }
 .obrvidea-levo p{
     font-size: 1.2vw;
+    margin-bottom: 10vh;
+}
+.obrvidea-levo a{
+    color: #79a79d;
+    border: 2px solid #79a79d;
+    border-radius: 50px;
+    text-align: center;
+    width: 8vw;
+    font-size: 1,5vw;
+    margin-bottom: 3vh;
 }
 .obrvidea-desno{
     display: flex;
     justify-content:flex-end;
     margin-right: 10vw;
     width: 50vw;
+}
+.servisiranje{
+    display: flex;
+    flex-direction: row;
+    background-color: #efeeec;
+    margin-left: 4.5vw;
+    margin-bottom: 20vh;
+    width: 90vw;
+    height: 600px;
+    border-radius: 15px;
+}
+.servisiranje iframe{
+    width: 50vw;
+    border-radius: 15px 0 0 15px;
+}
+.servisiranje-desno{
+    display: flex;
+    flex-direction: column;
+    background-color: #efeeec;
+    padding: 5vh 2vw;
+    width: 40vw;
+    border-radius: 0 15px 15px 0;
+}
+.servisiranje-desno h2{
+    color: #79a79d;
+    font-size: 3vw;
+    margin-bottom: 4vh;
+}
+.servisiranje-desno h3{
+    color: #79a79d;
+    font-size: 1.5vw;
+    margin-bottom: 8vh;
+}
+.servisiranje-desno p{
+    color: #333;
+    font-size: 1.2vw;
+    margin-bottom: 8vh;
+}
+.servisiranje-desno a{
+    color: #79a79d;
+    border: 2px solid #79a79d;
+    border-radius: 50px;
+    text-align: center;
+    width: 8vw;
+    font-size: 1,5vw;
+    margin-bottom: 3vh;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 99.1vw;
+    height: 600px;
+    background-color: rgba(51, 51, 51, 0.9);
+    font-size: 20px;
+}
+footer h2{
+    color: #79a79d;
+    margin-bottom: 10vh;
+}
+footer h2 span{
+    color: #fff;
+}
+footer a{
+    background-color: #D5E2E8;
+    padding: 2vh 4vw;
+    border-radius: 50px;
+    margin-bottom: 10vh;
+}
+footer a:hover{
+    background-color: #79a79d;
+}
+footer a i{
+    color: #333;
+    font-size: 20px;
+}
+footer p{
+    color: #fff;
+    margin-bottom: 10vh;
+}
+footer h6{
+    color: rgb(200, 200, 200);
+}
+footer h6 i{
+    font-size: 12px;
+    color: rgb(200, 200, 200);
 }
