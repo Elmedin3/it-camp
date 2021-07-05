@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="ime">Unesite vase ime:</p>
+    <input type="text" id="imee">
+    <button type="button" onclick="myFunction()">POTVRDI</button>
+    
+    <p id="ispis"></p>
+
+    <script>
+        function myFunction(){
+            let x = document.getElementById('imee').value;
+            let text;
+            if(x == "Eki"){
+                text = "Eki";
+            }
+            else if(x == "Amel"){
+                text = "Amel";
+            }
+            else{
+                text= "takvo ime ne postoji";
+            }
+            document.getElementById('ispis').innerHTML = text;
+        }
+    </script>
+</body>
+</html>
