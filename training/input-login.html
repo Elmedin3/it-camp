@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #141518;
+        }
+       .boxx{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 600px;
+            height: 400px;
+            background-color: #2c2f34;
+            border-radius: 15px;
+       }
+       .polje1{
+            background-color: #141518;
+            border-radius: 15px;
+            color: white;
+            width: 15vw;
+            height: 40px;
+            padding: 10px;
+            font-size: 20px;
+       }
+       .polje2{
+            background-color: #141518;
+            border-radius: 15px;
+            color: white;
+            width: 15vw;
+            height: 40px;
+            padding: 10px;
+            font-size: 20px;
+            margin-bottom: 30px;
+       }
+       .dugme{
+           width: 6vw;
+           height: 50px;
+           background-color: #5c69ff;
+           color: white;
+           border-radius: 15px;
+           font-size: 18px;
+       }
+    </style>
+</head>
+<body>
+<div class="boxx">
+    <form class="forma">
+        <input class="polje1" id="polje11" type="text" placeholder="Username" id="fname" name="fname"><br><br>
+        <input class="polje2" id="polje22" type="text" placeholder="Password" id="lname" name="lname"><br><br>
+        <input class="dugme" id="dugmee" type="submit" value="Submit">
+    </form>
+</div> 
+
+<script src="./input-login.js">
+
+</script>
+</body>
+</html>

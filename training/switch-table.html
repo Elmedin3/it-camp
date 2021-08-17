@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            height: 1080px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        a{
+            text-decoration: none;
+        }
+        .centar{
+            width: 50vw;
+            height: 540px;
+            display: flex;
+            flex-direction: column;
+        }
+        .dugme{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            
+        }
+        .dugme a{
+            padding: 20px 80px;
+            background-color: #79a79d;
+            color: #333;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .polje{
+            width: 980px;
+            height: 270px;
+        }
+        .polje1{
+            display: none;
+        }
+        .active1{
+            display: flex;
+            flex-direction: column;
+            width: 980px;
+            height: 270px;
+        }
+        .polje2{
+            display: none;
+        }
+        .active2{
+            display: flex;
+            flex-direction: column;
+            width: 980px;
+            height: 270px;
+        }
+        .polje3{
+            display: none;
+        }
+        .active3{
+            display: flex;
+            flex-direction: column;
+            width: 980px;
+            height: 270px;
+        }
+    </style>
+</head>
+<body>
+    <div class="centar">
+        <div class="dugme">
+            <a href="#dugmef" class="dugme1" id="dugme11">1</a>
+            <a href="#dugmes" class="dugme2" id="dugme22">2</a>
+            <a href="#dugmet" class="dugme3" id="dugme33">3</a>
+        </div>
+        <div class="polje">
+            <div class="polje1" id="polje11">
+                <h2>Welcome first</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci itaque enim atque deleniti doloribus ipsam, suscipit excepturi harum at distinctio totam ut minus ea fuga. Alias non omnis perspiciatis in.</p>
+            </div>
+            <div class="polje2" id="polje22">
+                <h2>Welcome second</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci itaque enim atque deleniti doloribus ipsam, suscipit excepturi harum at distinctio totam ut minus ea fuga. Alias non omnis perspiciatis in.</p>
+            </div>
+            <div class="polje3" id="polje33">
+                <h2>Welcome third</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci itaque enim atque deleniti doloribus ipsam, suscipit excepturi harum at distinctio totam ut minus ea fuga. Alias non omnis perspiciatis in.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const du1 = document.getElementById('dugme11')
+        const po1 = document.getElementById('polje11')
+
+        du1.addEventListener('click', () => {
+            po1.classList.toggle('active1')
+        }
+        )
+
+        const du2 = document.getElementById('dugme22')
+        const po2 = document.getElementById('polje22')
+
+        du2.addEventListener('click', () => {
+            po2.classList.toggle('active2')
+        }
+        )
+
+        const du3 = document.getElementById('dugme33')
+        const po3 = document.getElementById('polje33')
+
+        du3.addEventListener('click', () => {
+            po3.classList.toggle('active3')
+        }
+        )
+    </script>
+</body>
+</html>

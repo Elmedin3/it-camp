@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .broj11{
+            height: 45px;
+            width: 45px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .boja22{
+            width: 15px;
+            padding: 15px 15px;
+            background-color: green;
+        }
+        .boja23{
+            width: 15px;
+            padding: 15px 15px;
+            background-color: blue;
+        }
+        .boja24{
+            width: 15px;
+            padding: 15px 15px;
+            background-color: red;
+        }
+        .boja25{
+            width: 15px;
+            padding: 15px 15px;
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="number" class="broj11"  id="broj1">
+        <h2 id="broj2">3</h2>
+    </form>
+    <input type="button" onClick="divideBy()" Value="OK" /> 
+    <h1 id="boja" style="width: 40px; height: 40px;"></h1>
+
+    <script>
+        function divideBy() {
+            var b1 = document.getElementById('broj1').value;
+            var b2 = document.getElementById('broj2').innerHTML;
+            var b = document.getElementById('boja');
+            console.log(b)
+            
+            if(b1 % b2 === 0)
+            {
+                // document.getElementById('boja').innerHTML = "nema"
+                b.style.backgroundColor = 'green'
+            }
+            else if(b1 % b2 === 1)
+            {
+                // document.getElementById('boja').innerHTML = "ima 1"
+                b.style.backgroundColor = 'blue'
+            }
+            else if(b1 % b2 === 2)
+            {
+                // document.getElementById('boja').innerHTML = "ima 2"
+                b.style.backgroundColor = 'red'
+            }
+            else{
+                b.style.backgroundColor = 'yellow'
+            }
+    
+        }
+    </script>
+</body>
+</html>

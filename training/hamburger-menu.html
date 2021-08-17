@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    a{
+        text-decoration: none;
+    }
+    .navbarr{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        background-color: #333;
+    }
+    .iconn{
+        margin-left: 1vw;
+        color: #fff;
+        display: none;
+    }
+    .listt{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .listt li a{
+        text-decoration: none;
+        color: #fff;
+    }
+    @media screen and (max-width: 790px){
+        .navbarr{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-wrap: wrap;
+            height: auto;
+        }
+        .iconn{
+            display: block;
+            padding: 40px 20px;
+        }
+        .iconn:hover{
+            background-color: #fff;
+            color: #333;
+        }
+        .listt {
+            display: none;
+        }
+        .active{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        .listt li{
+            padding: 20px 0;
+            margin-left: 1vw;
+        }
+        /* 20364b  f7c518 */
+    }
+
+</style>
+</head>
+<body>
+    <header class="navbarr" id="navbar">
+        <a href="#home" class="iconn" id="icon">Menu</a>
+        <ul class="listt" id="list">
+            <li><a href="#">Početna</a></li>
+            <li><a href="#">O nama</a></li>
+            <li><a href="#">Web dizajn</a></li>
+            <li><a href="#">Web development</a></li>
+            <li><a href="#">Grafički dizajn</a></li>
+            <li><a href="#">Obrada videa</a></li>
+        </ul>
+    </header>
+
+    <script>
+        const ic = document.getElementById('icon')
+        const ls = document.getElementById('list')
+
+        ic.addEventListener('click', () => {
+            ls.classList.toggle('active')
+        }
+        )
+
+
+    </script>
+
+</body>
+</html>

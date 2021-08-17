@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.2;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: #20364b;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+        }
+        ul li{
+            padding: 5px 0px;
+            margin-right: 100px;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+        i{
+            margin-right: 50px;
+            padding: 10px;
+            background-color: rgb(247, 197, 24);
+            box-shadow:0px 0 20px rgb(247, 197, 24);
+            border-radius: 50%;
+        }
+        header{
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1{
+            margin-left: 100px;
+            font-size: 20px;
+            color: #fff;
+        }
+        header h1 span{
+            color: rgb(247, 197, 24)
+        }
+        .desno{
+            display: flex;
+        }
+        .centar{
+            display: flex;
+            height: 800px;
+        }
+        .centar-levo{
+            width: 45vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-left: 100px;
+        }
+        .centar-levo h1{
+            font-size: 100px;
+            margin-bottom: 50px;
+            color: #fff;
+        }
+        .centar-levo h1 span{
+            color: rgb(247, 197, 24);
+        }
+        .centar-levo p{
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 50px;
+        }
+        input{
+            padding-left: 10px;
+            border: none;
+            border-radius: 50px;
+            width: 300px;
+            height: 40px;
+        }
+    .i1{
+        margin-bottom: 20px;
+    }
+    .i2{
+        margin-bottom: 50px;
+    }
+    .a1{
+        background-color: rgb(247, 197, 24);
+        color: #20364b;
+        padding: 10px 20px;
+        border-radius: 50px;
+        font-size: 20px;
+    }
+    .centar-desno{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Creative<br><span>Marketing</span></h1>
+        <div class="desno">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+        <i class="fas fa-search"></i>
+        </div>
+    </header>
+    <div class="centar">
+        <div class="centar-levo">
+            <h1>Subscribe Now<br><span>to Our Newsletter</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Nostrum, ipsam. Exercitationem tenetur<br> consequatur corrupti tempora. Excepturi dicta ducimus<br> modi hic quas laudantium voluptatum saepe, delectus obcaecati, <br>perspiciatis, exercitationem maiores ipsam.</p>
+            <input type="text" class="i1">
+            <input type="email" class="i2">
+            <a class="a1" href="#">Send</a>
+        </div>
+        <div class="centar-desno">
+            <img src="girl.png" alt="slika">
+        </div>
+    </div>
+</body>
+</html>
