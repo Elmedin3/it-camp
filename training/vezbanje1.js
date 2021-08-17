@@ -44,23 +44,46 @@
 // }
 
 
-var niz = [];
-sab = 0;
+// var niz = [];
+// sab = 0;
 
-for(i=0; i<10; i++){
-    if(nizz===NaN){
-        alert('niste uneli broj')
-    }else{
-        nizz = parseInt(prompt("unesite clan"));
-        niz.push(nizz);
-        sab = sab + nizz;
-    }
-}
-console.log(sab)
+// for(i=0; i<10; i++){
+//     nizz = parseInt(prompt("unesite clan"));
+//     if(typeof nizz === 'number'){
+//         niz.push(nizz);
+//         sab = sab + nizz;
+//     }else{
+//         alert('niste uneli broj')
+//     }
+// }
+// console.log(sab)
 
 
-document.getElementById('nizzz').innerHTML = niz;
-document.getElementById('sabiranje').innerHTML = sab;
+// document.getElementById('nizzz').innerHTML = niz;
+// document.getElementById('sabiranje').innerHTML = sab;
+
+var niz = [43,56,23,89,88,90,99,652];
+console.log(niz);
+// niz.sort(function(a,b){
+///     return a-b
+// })
+// console.log(niz);
+
+
+console.log(Math.min(...niz));
+console.log(Math.min(...niz));
+
+
+
+// var niz = [];
+
+// p = -5
+// z = 7
+// for (let i = p;  i <= z ; i++) {
+//     niz.push(i);
+// }
+// console.log(niz);
+
 
 
 
