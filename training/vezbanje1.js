@@ -62,16 +62,16 @@
 // document.getElementById('nizzz').innerHTML = niz;
 // document.getElementById('sabiranje').innerHTML = sab;
 
-var niz = [43,56,23,89,88,90,99,652];
-console.log(niz);
+// var niz = [43,56,23,89,88,90,99,652];
+// console.log(niz);
 // niz.sort(function(a,b){
 ///     return a-b
 // })
 // console.log(niz);
 
 
-console.log(Math.min(...niz));
-console.log(Math.min(...niz));
+// console.log(Math.min(...niz));
+// console.log(Math.min(...niz));
 
 
 
@@ -84,6 +84,31 @@ console.log(Math.min(...niz));
 // }
 // console.log(niz);
 
+// var prviNiz = ["matematika","informatika"];
+// var drugiNiz = ["informatiqka"];
 
+
+// for(i=0; i<prviNiz.length; i++){
+//     if(drugiNiz.indexOf(prviNiz[i]) === -1){
+//         niz = true;
+//     }else{
+//         niz = false;
+//     }
+// }
+// console.log(niz);
+
+const niz1 = ["bag","mag"];
+const niz2 = ["rar","bag","mag","rag"];
+
+let niz = true;
+
+for (let i = 0; i < niz1.length; i++){
+    if (niz2.indexOf(niz1[i]) === -1) {
+        niz = false;
+        break;
+    }
+}
+
+console.log(niz);
 
 
