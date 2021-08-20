@@ -97,18 +97,68 @@
 // }
 // console.log(niz);
 
-const niz1 = ["bag","mag"];
-const niz2 = ["rar","bag","mag","rag"];
+// const niz1 = ["bag","mag"];
+// const niz2 = ["rar","bag","mag","rag"];
 
-let niz = true;
+// let niz = true;
 
-for (let i = 0; i < niz1.length; i++){
-    if (niz2.indexOf(niz1[i]) === -1) {
-        niz = false;
-        break;
+// for (let i = 0; i < niz1.length; i++){
+//     // if (niz2.indexOf(niz1[i]) === -1) {
+//     if (!niz2.includes(niz1[i])) {
+//         niz = false;
+//         break;
+//     }
+// }
+
+// console.log(niz);
+
+// function najRec(rec){
+//     let nizReci = rec.split(" ") 
+//     let naj = nizReci[0];
+
+//     for(let i=0; i < nizReci.length; i++){
+//         if(naj.length < nizReci[i].length){
+//             naj=nizReci[i];
+//         }
+//     }
+//     return naj;
+// }
+// console.log(najRec("ja kasmkasm askda"));
+let textt = "sadasnjost" 
+
+samoglasnici(textt)
+
+function samoglasnici(sam){
+    let slova = sam.split("");
+    let a = 0;
+    let e = 0;
+    let i = 0;
+    let o = 0;
+    let u = 0;
+
+    for(j=0; j<slova.length; j++){
+        // if(slova[i]==="a" || slova[i]==="e" || slova[i]==="i" || slova[i]==="o" || slova[i]==="u"){
+        //     samogla = samogla + 1;
+        // }
+        switch(slova[j]){
+            case "a":
+                a++;
+                break;
+            case "e":
+                e++;
+                break;
+            case "i":
+                i++;
+                break;
+            case "o":
+                o++;
+                break;
+            case "u":
+                u++;
+                break;      
+        }
     }
+    // return samogla;
+    console.log(`Ukupno samoglasnika ima: a${a}e${e}i${i}o${o}u${u}`);
 }
-
-console.log(niz);
-
 
