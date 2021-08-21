@@ -124,41 +124,85 @@
 //     return naj;
 // }
 // console.log(najRec("ja kasmkasm askda"));
-let textt = "sadasnjost" 
 
-samoglasnici(textt)
 
-function samoglasnici(sam){
-    let slova = sam.split("");
-    let a = 0;
-    let e = 0;
-    let i = 0;
-    let o = 0;
-    let u = 0;
+// let textt = "sadasnjost" 
 
-    for(j=0; j<slova.length; j++){
-        // if(slova[i]==="a" || slova[i]==="e" || slova[i]==="i" || slova[i]==="o" || slova[i]==="u"){
-        //     samogla = samogla + 1;
-        // }
-        switch(slova[j]){
-            case "a":
-                a++;
-                break;
-            case "e":
-                e++;
-                break;
-            case "i":
-                i++;
-                break;
-            case "o":
-                o++;
-                break;
-            case "u":
-                u++;
-                break;      
-        }
+// samoglasnici(textt)
+
+// function samoglasnici(sam){
+//     let slova = sam.split("");
+//     let a = 0;
+//     let e = 0;
+//     let i = 0;
+//     let o = 0;
+//     let u = 0;
+
+//     for(j=0; j<slova.length; j++){
+//         // if(slova[i]==="a" || slova[i]==="e" || slova[i]==="i" || slova[i]==="o" || slova[i]==="u"){
+//         //     samogla = samogla + 1;
+//         // }
+//         switch(slova[j]){
+//             case "a":
+//                 a++;
+//                 break;
+//             case "e":
+//                 e++;
+//                 break;
+//             case "i":
+//                 i++;
+//                 break;
+//             case "o":
+//                 o++;
+//                 break;
+//             case "u":
+//                 u++;
+//                 break;      
+//         }
+//     }
+//     // return samogla;
+//     console.log(`Ukupno samoglasnika ima: a${a}e${e}i${i}o${o}u${u}`);
+// }
+
+
+// function nizNula(nula){
+
+//     for(i=0; i<nula.length; i++){
+//         for(j=0; j<nula.length; j++){
+//         if(nula[i] === 0){
+//             nula.splice(i,1);
+//             nula.push(0);
+//         }
+//         }
+//     }
+//     return nula;
+// }
+// console.log(nizNula(["a",5,9,0,5,7,0,0,0,0,8,0,0,0,0,9,0,0,0,0]))
+
+
+// function nizbrojeva(arg1){
+//     sign = ["(",")"," ","-"];
+//     signIndx = [0,4,5,9];
+
+//     for(i=0;i<sign.length;i++){
+//         arg1.splice(signIndx[i],0,sign[i])
+//     }
+//     return arg1.join("")
+// }
+// console.log(nizbrojeva([1,2,3,4,5,6,7,8,9,0]))
+let brojevi = [2,4,5,6,8]
+
+parnepar(brojevi)
+
+function parnepar(integer){
+    par = []
+    nepar = []
+    for(i=0; i<integer.length; i++){
+        if(integer[i] % 2 === 0){
+            par.push(integer[i])
+    }   if(integer[i] % 2 !== 0){
+            nepar.push(integer[i])
     }
-    // return samogla;
-    console.log(`Ukupno samoglasnika ima: a${a}e${e}i${i}o${o}u${u}`);
 }
-
+}
+console.log(`Parni:${par} a Neparni:${nepar}`)

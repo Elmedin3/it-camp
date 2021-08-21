@@ -9,6 +9,7 @@
         *{
             padding: 0;
             margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
             box-sizing: border-box;
         }
         body{
@@ -22,6 +23,33 @@
             justify-content: center;
             width: 90vw;
         }
+        .panel{
+            background-size: auto 100%;
+            background-position: center;
+            width: 90vw;
+            height: 90vh;
+            border-radius: 50px;
+            color: #fff;
+            cursor: pointer;
+            margin: 10px;
+            position: relative;
+            transition: width 1s ease-in;
+        }
+        .panel h3 {
+            position: absolute;
+            font-size: 25px;
+            bottom: 20px;
+            left: 20px;
+            margin: 0;
+            opacity: 0;
+        }
+        .panel.aktivni{
+            width: 800vw;
+        }
+        .panel.aktivni h3{
+            opacity: 1;
+        }
+
 
     </style>
 </head>
@@ -30,18 +58,38 @@
         <div class="panel aktivni" style="background-image: url('tree.jpg');">
             <h3>Sea</h3>
         </div>
-        <div class="panel aktivni" style="background-image: url('avenue.jpg');">
+        <div class="panel" style="background-image: url('avenue.jpg');">
             <h3>Nature</h3>
         </div>
-        <div class="panel aktivni" style="background-image: url('buildings.jpg');">
+        <div class="panel" style="background-image: url('buildings.jpg');">
             <h3>City</h3>
         </div>
-        <div class="panel aktivni" style="background-image: url('woman.jpg');">
+        <div class="panel" style="background-image: url('woman.jpg');">
             <h3>River</h3>
         </div>
-        <div class="panel aktivni" style="background-image: url('lake.jpg');">
+        <div class="panel" style="background-image: url('lake.jpg');">
             <h3>Mountain</h3>
         </div>
     </div>
+
+    <script>
+
+        const panels = document.querySelectorAll('.panel')
+
+        panels.forEach(panel => {
+            panel.addEventListener('click', () => {
+                removeActiveClasses()
+                panel.classList.add('aktivni')
+            })
+        })
+
+        function removeActiveClasses() {
+            panels.forEach(panel => {
+                panel.classList.remove('aktivni');
+            })
+        }
+
+        
+    </script>
 </body>
 </html>
