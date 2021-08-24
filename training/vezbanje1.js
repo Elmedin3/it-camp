@@ -190,19 +190,71 @@
 //     return arg1.join("")
 // }
 // console.log(nizbrojeva([1,2,3,4,5,6,7,8,9,0]))
-let brojevi = [2,4,5,6,8]
 
-parnepar(brojevi)
 
-function parnepar(integer){
-    par = []
-    nepar = []
-    for(i=0; i<integer.length; i++){
-        if(integer[i] % 2 === 0){
-            par.push(integer[i])
-    }   if(integer[i] % 2 !== 0){
-            nepar.push(integer[i])
+// let brojevi = [2,4,5,6,8]
+
+// parnepar(brojevi)
+
+// function parnepar(integer){
+//     par = []
+//     nepar = []
+//     for(i=0; i<integer.length; i++){
+//         if(integer[i] % 2 === 0){
+//             par.push(integer[i])
+//     }   if(integer[i] % 2 !== 0){
+//             nepar.push(integer[i])
+//     }
+// }
+// }
+// console.log(`Parni:${par} a Neparni:${nepar}`)
+
+
+
+// function maskify(arg1){
+
+//     let niz = arg1.split("")
+//     console.log(niz)
+
+//     for(i=0; i < niz.length-4; i++){
+//         niz.splice(i,1,"#")
+        
+//     }
+//     console.log(niz)
+//     return niz.join(" ")
+// }
+// console.log(maskify("asde"))
+
+// let broj = "523"
+
+// razdvajanje(broj)
+
+// function razdvajanje(arg1){
+//     let niz = arg1.split("")
+//     let res = ""
+
+//     for(i=0; i < niz.length; i++){
+//         if(niz[i] !== '0' ){
+//             nula = "0".repeat(niz.length - 1 - i)
+//             res += niz[i] + nula + " + "
+//         }
+//     }
+//     return res.slice(0,res.length -3)
+// }
+// console.log(razdvajanje("564"))
+
+function dodavanje(arg1){
+
+    for(i=0; i<arg1.length; i++){
+        if(arg1.length === 0 ){
+            return "no one likes this"
+        }else if(arg1.length < 2){
+            return `${arg[0]} like this`
+        }else if(arg1.length < 3){
+            return `${arg1[0]} and ${arg1[1]} like this`
+        }else{
+            return `${arg1[0]}, ${arg1[1]} and ${arg1.length-2} more like this`
+        }
     }
 }
-}
-console.log(`Parni:${par} a Neparni:${nepar}`)
+console.log(dodavanje(["faris","Amel","eki"]))
